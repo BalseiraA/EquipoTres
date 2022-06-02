@@ -24,7 +24,7 @@
                   <li><a class="dropdown-item" href="#">Materias</a></li>
                   <li><a class="dropdown-item" href="#">Tablero</a></li>
                   <li><a class="dropdown-item" href="#">Calendario</a></li>
-                  <li><a class="dropdown-item" href="#">Juegos</a></li>
+                  <li><a class="dropdown-item" href="./juegos.php">Juegos</a></li>
                 </ul>
               </li>
             </ul>
