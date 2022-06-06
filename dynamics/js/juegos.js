@@ -4,7 +4,7 @@ const botonSopitas = document.getElementById("botonSopitas");
 // const botonMemo = document.getElementById("jugarMemo");
 
 botonSopitas.addEventListener("click", (evento) => {
-    console.log("SE LE DIO CLIK CL BOTON SOPITAS");
+    console.log("SE LE DIO CLIK AL BOTON SOPITAS");
     evento.target.document
 });
 
