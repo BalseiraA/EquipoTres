@@ -13,24 +13,39 @@
     
     echo "
         <h1>Sopitas de Letras</h1>
-        <form action='./sopa.php'method='POST'>
-            <legend>Crea tu propia sopa de letras</legend>
-            <br/>
-            <textarea name='palabras' id='palabras' cols='30' rows='10' placeholder='Separalas con un espacio'></textarea>
-            <br/>
-        </form>
-        <button id='botonSopitas'>Enviar</button>
+        <section id='formulario'>
+            <form action='./sopa.php' method='POST' style-display='block'>
+                <legend>Crea tu propia sopa de letras</legend>
+                <br/>
+                <textarea id='texTarea' name='texTarea' cols='30' rows='10' placeholder='Separalas con un espacio'></textarea>
+                <br/>
+            </form>
+            <button id='botonSopitas'>Enviar</button>
+        </section>
     ";
 
-    $palabras = (isset($_POST['palabras']) && $_POST['palabras'] != "" ) ? $_POST['palabras'] : 'Falta llenar el cuadrito de palabras :(';
-    
-    var_dump($palabras);
-    
+    $ID = 1;
+        
+    echo "
+        <table border='1' align='center' style='center' cellpadding='5%'>
+        <tbody id='contenedor'>
+    ";
+            for ($x=0; $x<30; $x++){ // filas horizontales
+                echo "<tr>";
+                for ($y=0; $y<30; $y++){ // casillas
+                    $rango_ltrs = rand(97, 122);
+                    $letra = chr($rango_ltrs);
+                    echo "<td id='$ID' class='casilla'> $letra </td>";
+                    $ID++;
+            }
+            echo '</tr>';
+        }
+    echo "
+        </tbody>
+        </table>
+    ";
+        
     ?>
-    
-    <div>
-        <!-- aqui se agrega lo que diga el js -->
-    </div>
        
     <script src="../../js/juegos.js" ></script>
 </body>
