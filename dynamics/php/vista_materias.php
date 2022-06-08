@@ -9,6 +9,7 @@
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link href="../../bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="../../statics/styles/calendar.css">
             <title id="titulo">Página de inicio</title>
         </head>
         <body>
@@ -16,8 +17,6 @@
             <!-- Barra de navegación -->   
             <div id="barra">
               <nav class="navbar navbar-expand-lg bg-light">
-                <div class="container-fluid">
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -32,9 +31,7 @@
                         </ul>
                       </li>
                     </ul>
-                  </div>
                   <span class="navbar-brand" id="tit">PÁGINA DE INICIO</span>
-                </div>
               </nav>
             </div>
             <!-- Barra de navegación -->
@@ -45,6 +42,7 @@
   echo'
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
           <script src="../js/index.js"></script>
+          
         </body>
         </html>';
 
