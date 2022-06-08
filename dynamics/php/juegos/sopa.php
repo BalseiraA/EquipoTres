@@ -16,8 +16,8 @@
         <section id='formulario'>
             <form action='./sopa.php' method='POST' style-display='block'>
                 <legend>Crea tu propia sopa de letras</legend>
-                <br/>
-                <textarea id='texTarea' name='texTarea' cols='30' rows='10' placeholder='Separalas con un espacio'></textarea>
+                <p>Separa las palabras entre si con un / y estas por letras con un guion. Ejemplo: h-o-l-a/c-o-m-o/e-s-t-a-s</p>
+                <textarea id='texTarea' name='texTarea' cols='30' rows='10'></textarea>
                 <br/>
             </form>
             <button id='botonSopitas'>Enviar</button>
