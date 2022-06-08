@@ -1,0 +1,98 @@
+#divPadre
+{
+    display: flex;
+    flex-direction: row;
+}
+#infoGeneral
+{
+    background-color: #d29EEb;
+    text-align: center;
+    border:solid;
+    border-width: 5px;
+    border-color: #5e17eb;
+    width:max-content;
+}
+h3
+{
+    margin: 40px;
+    margin-bottom: 20px;
+    color:#814beb;
+}
+img
+{
+    margin: 20px;
+}
+#perfilNombre,#nCuenta,#correoElectronico
+{
+    background-color: white;
+    height: 40px;
+    margin: 30px;
+    border:none;
+    border-radius: 10px;
+    color:#814beb;
+    font-size: large;
+}
+#grupo,#seccion
+{
+    background-color:white;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    color:#814beb;
+    font-size: large;
+    text-align: center;
+    border-radius: 20px;
+    width:70px;
+    height: 70px;
+    margin: 10px;
+}
+#navBar
+{
+    background-color: #d29EEb;
+    text-align: center;
+    border:solid;
+    border-width: 5px;
+    border-color: #5e17eb;
+    width:auto;
+}
+#infoCompleta
+{
+    background-image:url(../img/prepa6-jardineras-4to.jpg);
+    background-size: cover;
+}
+#perfilNombre2,#correoElectronico2,#correoElectronicoRecup,#telefono
+{
+    background-color: #f3fadc;
+    height: 40px;
+    margin: 30px;
+    border:none;
+    border-radius: 10px;
+    color:#d581a1;
+    font-size: large;
+}
+#grupo2,#seccion2,#nCuenta2
+{
+    background-color: #ccbaf1;
+    height: 40px;
+    margin: 30px;
+    border:none;
+    border-radius: 10px;
+    color:white;
+    font-size: large;
+}
+button
+{
+    color: white;
+    font-size: medium;
+    border:solid;
+    border-width: 2px;
+    border-color: #5e17eb;
+    border-radius: 10px;
+    background-color:#814beb;
+    height: 30px;
+    text-align: center;
+}
+#cambiarInfo
+{
+    margin: 30px;
+}
