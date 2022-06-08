@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "FuenteTitulo";
+    src: url("../fonts/Letters for Learners.ttf");
+}
+@font-face {
+    font-family: "FuenteTexto";
+    src: url("../fonts/Letters for Learners.ttf");
+}
+@font-face {
+    font-family: "FuenteTitulos";
+    src: url("../fonts/Moonbright Demo.ttf");
+}
+
+
+body{
+    background-color: aquamarine;
+}
+
+h1{
+
+}
