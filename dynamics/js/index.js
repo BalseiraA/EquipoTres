@@ -20,6 +20,7 @@ menu.addEventListener("click", (event) => {
     if(eleccion.id == 'tablero'){
         titulo.innerHTML = 'Tablero';
         tit.innerHTML = '<span class="navbar-brand" id="tit">TABLERO</span>';
+        mostrar.innerHTML = '<button id="Materiales-boton">Materiales</button><button id="Trabajos-boton">Trabajos</button><div id="espacio"></div>';
         console.log("tablero");
     }
     if(eleccion.id == 'calendario'){
