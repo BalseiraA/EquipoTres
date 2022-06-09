@@ -56,11 +56,15 @@
 
         $sql = "SELECT Usuario_ID FROM usuario WHERE Usuario_ID LIKE '$apodo'";
         $query = mysqli_query($con, $sql);
+        $row = mysqli_fetch_array($query);
         
-        if($query != '')
+        if($row == "")
         {
             $sql = "INSERT INTO usuario VALUES ('$apodo', $grupo, '$nombre', '$apellido', '$correo', '$contrasena', '', '$ncuenta', '')";
             mysqli_query($con, $sql);
+        }
+        else{
+            echo "<p>Ese apodo ya está ocupado, intenta uno nuevo</p>";
         }
     ?>
 
