@@ -17,7 +17,7 @@
 
     <!-- Formulario de acceso -->
     <a href='./registroAlumno.php'><button>Acceso a alumnos</button></a>
-    <a href='./registroProfesor.php'><button>Acceso a profesores</button></a>
+    <a href='./registroAlumno.php'><button>Acceso a profesores</button></a>
     ";
     ?>
 

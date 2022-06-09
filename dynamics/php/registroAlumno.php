@@ -1,3 +1,4 @@
+
 <?php
   include("./config.php");
   $con = connect();
@@ -72,11 +73,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-
