@@ -6,10 +6,11 @@ const td = document.getElementsByClassName("casilla");
 
 //separa la cadena de palabras en un arreglo de arreglos
 function separar(palabras){
-    arreglo = palabras.split("/");
+    arreglo = palabras.split(",");
     for(var i=0; i<arreglo.length; i++){
-        arreglo[i] = arreglo[i].split("-");
+        arreglo[i] = arreglo[i].split(""); //separa
     }
+    arreglo = arreglo.filter((valor) => valor.length != 0);
 }
 
 function acomodarVertical(arreglo){
@@ -60,6 +61,6 @@ botonSopitas.addEventListener("click", (evento) => {
 });
 
 contenedor.addEventListener("click", (evento) => {
-    evento.target.style.backgroundColor = "#CCBAF1";
+    evento.target.style.backgroundColor = "#8C52FF";
     console.log(contenedor);
 });

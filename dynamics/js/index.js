@@ -367,7 +367,7 @@ menu.addEventListener("click", (event) => {
     if(eleccion.id == 'juegos'){
         titulo.innerHTML = 'Juegos';
         tit.innerHTML = '<span class="navbar-brand" id="tit">JUEGOS</span>';
-        mostrar.innerHTML = "<h3><span>Sopita de Letras</span></h3><h4><span><a id='jugarSopitas' href='./sopa.php'>Jugar</a>";
+        mostrar.innerHTML = "<section class='SOPITAS'><h3><span>Sopita de Letras</span></h3><img src='../../statics/img/sopitas.png' alt='sopita' width='400vw'><h4><span><a id='jugarSopitas' href='./sopa.php'>Jugar</a></section>";
         console.log("juegos");
     }
 });

@@ -2,7 +2,7 @@
         font-family: "Fuente 1";
         src: url(../fonts/Alata/Alata-Regular.ttf);
     }
-    
+
     body {
         margin: 0;
         padding: 0;
@@ -192,4 +192,34 @@
         overflow: hidden;
         transition: max-height 0.2s ease-out;
         width: 100%;
+    }
+
+    .SOPITAS {
+        border-radius: 10% 10% 10% 10%;
+        background-color: #c1a6f8;
+        font-family: "Fuente 1";
+        font-weight: bolder;
+        font-size: 100px;
+       
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align:center;
+        
+        position: relative;
+        margin: auto;
+        top: 12vh;
+        width: 500px;
+        height: 500px;
+    }
+
+    #jugarSopitas{
+        color: #fff;
+        border: 3px solid #5717eb;
+        border-radius: 10% 10% 10% 10%;
+        background-color: #814beb;
+        position: relative;
+        top: 20px;
+        width: 100px;
+        height: 100px;
     }
