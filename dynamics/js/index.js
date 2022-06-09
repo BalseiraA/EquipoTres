@@ -2,6 +2,8 @@ const menu = document.getElementById("menu");
 const mostrar = document.getElementById("mostrar");
 const titulo = document.getElementById("titulo");
 const tit = document.getElementById("tit");
+const apodo = document.getElementById("apodo");
+const contrasena = document.getElementById("contrasena");
 
 menu.addEventListener("click", (event) => {
     const eleccion = event.target;
@@ -9,6 +11,7 @@ menu.addEventListener("click", (event) => {
     if(eleccion.id == 'perfil'){
         titulo.innerHTML = 'Perfil';
         tit.innerHTML = '<span class="navbar-brand" id="tit">INFORMACIÓN VISIBLE</span>';
+        mostrar.innerHTML = '<div id="divPadre"><div id="infoGeneral"><div id="perfilNombre">Nombre</div><div id="nCuenta">Número de cuenta<!-- Esto va en la parte del perfil maestro, solo hay que sustituir --><!-- <button id="horarios">Horarios</button> --></div><div id="grupo">Grupo<!-- Esto va en la parte del perfil maestro, solo hay que sustituir --><!-- <button id="grupos">Grupos</button> --></div><div id="seccion">Sección<!-- Esto va en la parte del perfil maestro, solo hay que sustituir --><!-- <button id="materias">Materias</button> --></div><div id="correoElectronico">Correo electrónico institucional</div><div id="cambiarInfo"><a href="../templates/perfilUsuario.html"><strong>Cambiar información</strong></a></div></div><div id="infoCompleta"><div id="navBar"><img src="../../statics/media/images/Logo Coyoaulas.png" alt="logo" width="50"></div><div></div><div id="perfilNombre2">Nombre</div><div id="correoElectronico2">Correo electrónico</div><div id="correoElectronicoRecup">Correo electrónico de recuperación</div><div id="nCuenta2">Número de cuenta//desactivado<!-- RFC --></div><div><div id="grupo2">Grupo//desactivado<!-- Número de trabajador --></div><div id="seccion2">Sección//desactivado<!-- Número telefónico --></div></div><div id="telefono">Número telefónico</div><div><button id="guardar"><strong>Guardar cambios</strong></button> </div></div></div>';
         console.log("perfil");
     }
     if(eleccion.id == 'materias'){
@@ -20,7 +23,54 @@ menu.addEventListener("click", (event) => {
     if(eleccion.id == 'tablero'){
         titulo.innerHTML = 'Tablero';
         tit.innerHTML = '<span class="navbar-brand" id="tit">TABLERO</span>';
-        mostrar.innerHTML = '<button id="Materiales-boton">Materiales</button><button id="Trabajos-boton">Trabajos</button><div id="espacio"></div>';
+        mostrar.innerHTML = '<div id="botones"><div><button id="Materiales-boton"><strong>Materiales</strong></button></div><div><div id="anadir" style="display:block;"><strong>+</strong> </div></div><div><button id="Trabajos-boton"><strong>Trabajos</strong></button>  </div></div><div><div id="espacio-Trabajo"><!-- aqui va el formulario --></div></div>';
+        const botonAnadir = document.getElementById("anadir");
+        const espacio = document.getElementById("espacio-Trabajo");
+        let formulario = document.createElement("form");
+        let celda = document.createElement("fieldset");
+        let input1 = document.createElement("input");
+        let texto = document.createElement("textarea");
+        let input2 = document.createElement("input");
+        let fecha = document.createElement("input");
+
+
+
+        botonAnadir.addEventListener("click",() =>
+        {
+            botonAnadir.style.display = "none";
+            formulario.setAttribute("id", "añadirTareas");
+            input1.setAttribute("type", "text");
+            input1.setAttribute("placeholder", "Título del material");
+            texto.setAttribute("rows", "10");
+            texto.setAttribute("cols", "100");
+            texto.setAttribute("placeholder", "Descripción");
+            texto.setAttribute("id", "descripcion");
+            input2.setAttribute("type", "file");
+            input2.setAttribute("placeholder", "Archivos a compartir");
+            input2.setAttribute("multiple", "");
+            fecha.setAttribute("type", "date");
+
+            console.log("Añadir tarea");
+            celda.innerHTML += '<h2>AÑADIR NUEVO MATERIAL</h2>'
+            espacio.append(formulario);
+            formulario.append(celda);
+            celda.append(input1);
+            celda.innerHTML += '<br><br>';
+            celda.append(texto);
+            celda.innerHTML += '<br><br>';
+            celda.append(input2);
+            celda.innerHTML += '<br><br>Tipo de material: <select><option value="material">Material de estudio</option><option value="asignacion">Asignación</option></select><br><br>';
+            celda.innerHTML += 'Fecha de entrega';
+            celda.append(fecha);
+            celda.innerHTML += '<br><br><button id="Publicar">Publicar</button>';
+        });
+
+        const publicar = document.getElementById("Publicar");
+        publicar.addEventListener("click", ()=>
+        {
+            console.log("tarea publicada");
+            botonAnadir.style.display = "block";
+        });
         console.log("tablero");
     }
     if(eleccion.id == 'calendario'){
