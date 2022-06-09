@@ -50,7 +50,7 @@ img
 {
     background-color:white;
     display: flex;
-    align-content: center;
+    align-items:  center;
     flex-direction: row;
     color:#814beb;
     font-size: large;
@@ -147,5 +147,22 @@ button:hover
 {
     width: auto;
     font-size: x-large;
+}
+#anadir
+{
+    background-color: #d581a1;
+    color: #370797;
+    font-size: xxx-large;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    align-content: center;
+    border:solid;
+    border-color: #370797;
+    border-radius: 100%;
+}
+#anadir:hover
+{
+    background-color: #b35579;
 }
 /* ------------------- */
