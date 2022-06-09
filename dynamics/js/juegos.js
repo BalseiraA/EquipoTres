@@ -6,7 +6,7 @@ const td = document.getElementsByClassName("casilla");
 
 //separa la cadena de palabras en un arreglo de arreglos
 function separar(palabras){
-    // palabras = palabras.toLowerCase();
+    palabras = palabras.toLowerCase();
     arreglo = palabras.split(",");
     for(var i=0; i<arreglo.length; i++){
         arreglo[i] = arreglo[i].split(""); //separa
@@ -72,5 +72,4 @@ botonSopitas.addEventListener("click", (evento) => {
 
 contenedor.addEventListener("click", (evento) => {
     evento.target.style.backgroundColor = "#8C52FF";
-    evento.target.style.backgroundColor = "#FFF";
 });
