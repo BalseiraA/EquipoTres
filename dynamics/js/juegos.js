@@ -6,7 +6,7 @@ const td = document.getElementsByClassName("casilla");
 
 //separa la cadena de palabras en un arreglo de arreglos
 function separar(palabras){
-    // palabras = palabras.toLowerCase();
+    palabras = palabras.toLowerCase();
     arreglo = palabras.split(",");
     for(var i=0; i<arreglo.length; i++){
         arreglo[i] = arreglo[i].split(""); //separa
@@ -23,7 +23,6 @@ function acomodar(arreglo){
             min = 1;
             max = 300;
             y = Math.ceil(Math.random()*(max-min)+min);
-
             for (let valor of arreglo[llave]){ //controla las letras
                 td[y].innerText = valor;
                 y += 60;
@@ -32,7 +31,6 @@ function acomodar(arreglo){
             min = 301;
             max = 600;
             y = Math.ceil(Math.random()*(max-min)+min);
-            
             for (let valor of arreglo[llave]){ //controla las letras
                 td[y].innerText = valor;
                 y += 60;
@@ -41,7 +39,6 @@ function acomodar(arreglo){
             min = 601;
             max = 900;
             y = Math.ceil(Math.random()*(max-min)+min);
-            
             for (let valor of arreglo[llave]){ //controla las letras
                 td[y].innerText = valor;
                 y += 1;
@@ -50,7 +47,6 @@ function acomodar(arreglo){
             min = 901;
             max = 1200;
             y = Math.ceil(Math.random()*(max-min)+min);
-            
             for (let valor of arreglo[llave]){ //controla las letras
                 td[y].innerText = valor;
                 y += 1;
@@ -63,9 +59,7 @@ var palabras;
 var arreglo;
 
 botonSopitas.addEventListener("click", (evento) => {
-    console.log("SE LE DIO CLIK AL BOTON SOPITAS");
     palabras = texTarea.value;
-    
     formulario.style.display = "none";
     contenedor.style.display = "block";
     
@@ -78,5 +72,4 @@ botonSopitas.addEventListener("click", (evento) => {
 
 contenedor.addEventListener("click", (evento) => {
     evento.target.style.backgroundColor = "#8C52FF";
-    console.log(contenedor);
 });

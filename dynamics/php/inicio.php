@@ -30,17 +30,18 @@ if (isset($_SESSION["usuario"])) {
             <form action='' method='post'>
                 <div class="row">
                     <div class="col-7 mx-auto mb-4">
+                        <br/>
                         <div class="form-group">
                             <input id='apodo' name='apodo' type='apodo' placeholder='Apodo' class="form-control">
-                            <br/><br/>
+                            <br/>
                         </div>
                         <div class="form-group">
                             <input id='contrasena' name='contrasena' type='password' placeholder='Contraseña' class="form-control">
-                        <br><br>
                         </div>
                     </div>
                 </div>
                 <button type='submit'>Iniciar Sesión</button>
+                <br/>
 
                 <?php
                     $apodo = (isset($_POST["apodo"]) && $_POST["apodo"] !== "")? $_POST["apodo"] : false;
@@ -73,7 +74,6 @@ if (isset($_SESSION["usuario"])) {
                 
                 ?>
             </form>
-
 
             <!-- Formulario Registro  -->
             <form action='./intermedio.php' method='post'>
